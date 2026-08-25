@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(주)디씨티 컴퍼니 | 공식 포털 및 솔루션 쇼케이스 [Final: 에메랄드 & 골드]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Pretendard', sans-serif; background-color: #F8FAFC; color: #0F172A; }
+        .card-shadow { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03); }
+        .card-hover:hover { transform: translateY(-3px); box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.08); }
+        /* C안의 구조 + A안의 에메랄드 인디고 그라데이션 + 앰버 골드 포인트 */
+        .theme-gradient { background: linear-gradient(135deg, #0F766E 0%, #0D9488 100%); }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(13, 148, 136, 0.12) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-teal-600 selection:text-white">
+
+    <!-- Header -->
+    <header class="w-full border-b border-slate-200 bg-white/85 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl theme-gradient flex items-center justify-center font-bold text-white text-lg shadow-md">DCT</div>
+                <span class="text-xl font-bold tracking-tight text-slate-900">(주)디씨티 컴퍼니 
+                    <span class="text-xs font-semibold px-2 py-0.5 bg-amber-50 text-amber-800 rounded-full border border-amber-200 ml-2">에메랄드 & 골드 에디션</span>
+                </span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#solutions" class="hover:text-teal-700 transition">솔루션 소개</a>
+                <a href="#manuals" class="hover:text-teal-700 transition">사용 설명서</a>
+                <a href="#vision" class="hover:text-teal-700 transition">철학 및 비전</a>
+            </nav>
+            <div>
+                <a href="#solutions" class="px-4 py-2 text-sm font-semibold bg-teal-700 hover:bg-teal-800 text-white rounded-xl transition shadow-sm">프로젝트 문의</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Tech Grid & Emerald/Gold Glow -->
+    <section class="relative max-w-7xl mx-auto px-6 py-28 text-center bg-grid-pattern overflow-hidden">
+        <!-- Ambient Gold & Emerald Glow Effect -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[320px] bg-gradient-to-r from-teal-400/15 to-amber-400/15 blur-[130px] rounded-full pointer-events-none"></div>
+
+        <div class="relative z-10">
+            <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-semibold mb-6 shadow-sm">
+                <span>🏆 프리미엄 에듀테크 & 지능형 자동화 솔루션</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
+                비즈니스를 움직이는 정직한 소프트웨어,<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-700 to-emerald-600">(주)디씨티 컴퍼니</span>
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Math4U 수학학원 운영 노하우를 바탕으로 태어난 스마트 출결 앱, Aegis AI 미팅룸, 그리고 차세대 AI 개인지도 웹앱까지 신뢰할 수 있는 기술을 제공합니다.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#solutions" class="px-6 py-3.5 font-semibold bg-teal-700 text-white rounded-xl hover:bg-teal-800 transition shadow-md shadow-teal-700/20">솔루션 둘러보기</a>
+                <a href="#manuals" class="px-6 py-3.5 font-semibold bg-white text-slate-700 border border-slate-300 rounded-xl hover:bg-slate-50 transition shadow-sm">사용 설명서 보기</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions / Products Grid -->
+    <section id="solutions" class="max-w-7xl mx-auto px-6 py-16 border-t border-slate-200 bg-white/50">
+        <div class="text-center mb-16">
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-3">디씨티 핵심 프로덕트 쇼케이스</h2>
+            <p class="text-slate-600 text-sm">지적인 에메랄드 인디고 컬러와 품격 있는 골드 포인트가 조화된 공식 브랜드 에디션입니다.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Product 1: 출결관리앱 -->
+            <div class="bg-white rounded-2xl p-8 card-shadow card-hover border border-slate-200 flex flex-col justify-between transition">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center font-bold text-xl mb-6">🎓</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">스마트 출결 관리 앱</h3>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">학원생 등하원 알림, 실시간 출석 체크, 학부모 연동 알림톡 자동화가 완비된 현장 맞춤형 솔루션.</p>
+                    <div class="space-y-2 mb-6 text-xs text-slate-700">
+                        <div class="flex items-center">✓ 카카오톡 알림톡 자동 연동</div>
+                        <div class="flex items-center">✓ 원클릭 출결 통계 리포트</div>
+                    </div>
+                </div>
+                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span class="text-xs text-teal-700 font-semibold">Stable v1.2</span>
+                    <span class="text-xs font-semibold text-amber-800 bg-amber-50 px-3 py-1.5 rounded-lg border border-amber-200">다운로드</span>
+                </div>
+            </div>
+
+            <!-- Product 2: Aegis -->
+            <div class="bg-white rounded-2xl p-8 card-shadow card-hover border border-slate-200 flex flex-col justify-between transition">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center font-bold text-xl mb-6">🛡️</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Aegis (AI 미팅룸)</h3>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">자체 호스팅 기반의 강력한 보안 회의실 및 AI 회의록 자동 요약·아카이빙 시스템.</p>
+                    <div class="space-y-2 mb-6 text-xs text-slate-700">
+                        <div class="flex items-center">✓ Supabase 기반 독립 데이터 보안</div>
+                        <div class="flex items-center">✓ 실시간 STT 및 AI 회의 요약</div>
+                    </div>
+                </div>
+                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span class="text-xs text-teal-700 font-semibold">Self-Hosted SaaS</span>
+                    <span class="text-xs font-semibold text-amber-800 bg-amber-50 px-3 py-1.5 rounded-lg border border-amber-200">소개 & 가이드</span>
+                </div>
+            </div>
+
+            <!-- Product 3: AI Math4U -->
+            <div class="bg-white rounded-2xl p-8 card-shadow card-hover border border-teal-200 flex flex-col justify-between transition relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-amber-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl">DEV PREVIEW</div>
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center font-bold text-xl mb-6">📐</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">AI Math4U 개인지도</h3>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">태블릿-화이트보드 LaTeX 실시간 미러링과 원장님의 티칭 노하우가 녹아든 차세대 AI 수학 튜터.</p>
+                    <div class="space-y-2 mb-6 text-xs text-slate-700">
+                        <div class="flex items-center">✓ 실시간 수식 변환 (LaTeX)</div>
+                        <div class="flex items-center">✓ 개인별 맞춤 문제 추천 알고리즘</div>
+                    </div>
+                </div>
+                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span class="text-xs text-amber-600 font-semibold">개발 진행 중</span>
+                    <span class="text-xs font-semibold text-slate-700 bg-slate-100 px-3 py-1.5 rounded-lg">로드맵 보기</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white py-12 mt-20 text-center text-xs text-slate-500">
+        <p class="mb-2">&copy; 2026 (주)디씨티 컴퍼니 & Math4U Academy. All rights reserved.</p>
+        <p>Designed with Emerald & Gold Edition. Powered by DCT C-Suite AI Agents.</p>
+    </footer>
+
+</body>
+</html>

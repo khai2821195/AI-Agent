@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(주)디씨티 컴퍼니 | Aegis (AI 미팅룸) 소개 및 사용 가이드</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Pretendard', sans-serif; background-color: #F8FAFC; color: #0F172A; }
+        .card-shadow { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03); }
+        .theme-gradient { background: linear-gradient(135deg, #0F766E 0%, #0D9488 100%); }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-teal-600 selection:text-white">
+    <!-- Header -->
+    <header class="w-full border-b border-slate-200 bg-white/85 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <a href="sample_final_emerald_gold.html" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl theme-gradient flex items-center justify-center font-bold text-white text-lg shadow-md">DCT</div>
+                    <span class="text-xl font-bold tracking-tight text-slate-900">(주)디씨티 컴퍼니</span>
+                </a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="text-xs font-semibold px-2.5 py-1 bg-amber-50 text-amber-800 rounded-full border border-amber-200">Self-Hosted SaaS</span>
+                <a href="sample_final_emerald_gold.html" class="text-sm font-medium text-slate-600 hover:text-teal-700 transition">← 메인으로 돌아가기</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main class="max-w-4xl mx-auto px-6 py-16">
+        <div class="mb-12">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-700 text-xs font-semibold mb-4">
+                <span>🛡️ 엔터프라이즈 보안 회의실</span>
+            </div>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">Aegis (에이디스) AI 미팅룸</h1>
+            <p class="text-lg text-slate-600 leading-relaxed">자체 호스팅(Self-Hosted) 기반의 독립 데이터 보안과 멀티 LLM(GPT, Claude, Gemini)을 지원하는 차세대 회의 및 의사결정 지원 플랫폼입니다.</p>
+        </div>
+
+        <!-- CTA Box -->
+        <div class="bg-white rounded-2xl p-8 card-shadow border border-slate-200 mb-12 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+                <h3 class="text-xl font-bold text-slate-900 mb-1">Aegis 도입 및 설치 가이드</h3>
+                <p class="text-slate-500 text-sm">Docker Compose 기반 원클릭 배포 패키지 제공</p>
+            </div>
+            <div class="flex space-x-3 w-full md:w-auto">
+                <button onclick="alert('Aegis 설치 가이드 문서로 이동합니다.')" class="flex-1 md:flex-none px-6 py-3 font-semibold bg-teal-700 text-white rounded-xl hover:bg-teal-800 transition shadow-sm text-center">GitHub 저장소 방문</button>
+            </div>
+        </div>
+
+        <!-- Manual Sections -->
+        <div class="space-y-12">
+            <section class="bg-white rounded-2xl p-8 card-shadow border border-slate-200">
+                <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center">
+                    <span class="w-8 h-8 rounded-lg bg-teal-50 text-teal-700 flex items-center justify-center text-sm font-bold mr-3">1</span>
+                    핵심 아키텍처 및 보안
+                </h2>
+                <ul class="space-y-3 text-slate-600 text-sm leading-relaxed list-disc list-inside">
+                    <li><strong>독립 데이터 보안:</strong> 외부 SaaS 클라우드에 회의록이 저장되지 않고, 사내 서버나 Supabase 인프라에 안전하게 암호화 아카이빙.</li>
+                    <li><strong>멀티 LLM 통합:</strong> OpenAI, Anthropic, Google Gemini 등 원하는 AI 모델을 API 키 연동으로 자유롭게 교체 사용.</li>
+                    <li><strong>실시간 STT 및 자동 요약:</strong> 회의 음성을 실시간 텍스트로 변환하고, 핵심 의사결정 사항을 자동으로 정리하여 요약 리포트 생성.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white py-8 text-center text-xs text-slate-500">
+        <p>&copy; 2026 (주)디씨티 컴퍼니. All rights reserved.</p>
+    </footer>
+</body>
+</html>
